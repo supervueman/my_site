@@ -1,0 +1,56 @@
+body
+  color: $light-color
+  background-color: $dark-color
+
+.c-scrollbar
+	background-color: transparent
+.c-scrollbar_thumb
+	background-color: $blue-color
+
+.cursor
+	circle
+		fill: $red-color
+	&-target
+		color: $light-color
+.cursor--outer
+	border-color: $blue-color
+
+.link
+	+on-event
+		.string
+			color: $green-color
+	&-active
+		.string
+			color: $green-color
+	&--icon
+		+on-event
+			path
+				fill: $red-color
+
+.string
+	color: $light-color
+.arr-literal
+	color: $blue-color
+.quote-double
+	color: $light-color
+
+.text
+	&_red
+		color: $red-color
+	&_green
+		color: $green-color
+	&_blue
+		color: $blue-color
+	&_yellow
+		color: $yellow-color
+
+.card
+	color: $light-color
+
+.footer
+  background-color: $dark-color
+
+.input
+	+input-colorize($green-color, transparent, $light-color, $green-color, transparent, $light-color)
+	&::placeholder
+		color: $light-color

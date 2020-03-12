@@ -1,0 +1,13 @@
+.card
+	display: block
+	cursor: none
+	text-decoration: none
+	transition: transform 0.5s
+	&--title
+		margin:
+			top: 0
+			bottom: 20px
+	&--media
+		overflow: hidden
+	+on-event
+		transform: translateY(-10px)

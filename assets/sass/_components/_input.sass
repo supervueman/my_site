@@ -1,0 +1,39 @@
+%input
+	outline: none
+	width: 300px
+	border: none
+	border-bottom-width: 1px
+	border-bottom-style: solid
+	transition: color 0.5s, border-color 0.5s
+	transition-timing-function: cubic-bezier(.35,0,0,1.01)
+	font-size: 14px
+	font-weight: normal
+	line-height: 18px
+	padding: 5px 0
+	letter-spacing: 0.1em
+	background-color: transparent
+	cursor: none
+	&::placeholder
+		transition: color 0.5s
+		transition-timing-function: cubic-bezier(.35,0,0,1.01)
+
+.input
+	@extend %input
+	&--wrapper
+		position: relative
+		display: inline
+	&--footer
+		position: absolute
+		bottom: -25px
+		left: 0
+		width: 100%
+		font-size: 12px
+	&--error
+		.input
+			border-color: $red-color!important
+			&::placeholder
+				color: $red-color!important
+			&--footer
+				color: $red-color
+			&--footer
+				color: $red-color

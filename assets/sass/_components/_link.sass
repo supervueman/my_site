@@ -1,0 +1,31 @@
+.link
+	line-height: 1.7
+	text-decoration: none
+	cursor: none
+	.arr-literal
+		opacity: 0
+	&-active
+		.arr-literal
+			opacity: 1
+	@include on-event
+		.arr-literal
+			opacity: 1
+
+	&--icon
+		cursor: none
+		width: 25px
+		height: 25px
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-right: 30px
+		img, svg
+			width: 25px
+			height: 25px
+		path
+			transition: fill 1s $cubic
+
+.facebook--icon
+	img, svg
+		width: 20px
+		height: 20px
